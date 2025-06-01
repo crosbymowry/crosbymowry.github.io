@@ -1,21 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
-        <link rel="stylesheet" href="styles.css" />
-        <script src="script.js"></script>
-    </head>
-    <body style="background-color: peachpuff; color: red; ">
-        <h1 class="title">Crosby Mowry - Portfolio</h1>
-        <div id="mainDiv">With a strong focus on minimal, clean layouts, typography, and hierarchy, my 
-            work prioritizes structure and readability while maintaining an engaging visual presence.</div>
-  
-    <nav>
-    <a href="page1.html">Go to page 1</a> |
-    <a href="page2.html">Go to page 2</a>
-     | <a href="page3.html">Go to page 3</a>
-    |    <a href="gifshowcase.html">GIF Showcase</a>  
+<head>
+  <meta charset="UTF-8" />
+  <title>Crosby Mowry - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #c2d8f4;
+      color: #1d2d44;
+      margin: 40px;
+    }
+
+    h1.title {
+      font-size: 2.5rem;
+      color: #f7e4d6;
+      margin-bottom: 20px;
+    }
+
+    #mainDiv {
+      font-size: 1rem;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1d2d44;
+      background-color: #f7e4d6;
+      padding: 8px 16px;
+      border-radius: 6px;
+      margin-right: 10px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e9d4c2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="title">Crosby Mowry - Portfolio</h1>
+
+  <div id="mainDiv">
+    With a strong focus on minimal, clean layouts, typography, and hierarchy, my 
+    work prioritizes structure and readability while maintaining an engaging visual presence.
+  </div>
+
+  <nav>
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="page3.html">Page 3</a>
+    <a href="gifshowcase.html">GIF Showcase</a>
   </nav>
-    </body>
+
+</body>
 </html>

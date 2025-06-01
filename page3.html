@@ -1,19 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <title>Title</title>
-    </head>
-    <body><h1 class="title">Horror Shop ~ Dracula's Manner</h1>
-        <div id="mainDiv">A horror shop inspired by the classic Universal Studios monsters.</div>
+<head>
+  <meta charset="UTF-8" />
+  <title>Horror Shop ~ Dracula's Manner</title>
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #c2d8f4;
+      color: #1d2d44;
+      margin: 40px;
+    }
 
-    <img src="Image_3.png" alt="A horror shop inspired by the classic Universal monsters" width="300">
-    
-    <nav>
-   <a href="index.html">Go to Home</a> |
-    <a href="page1.html">Go to page 1</a>
-     | <a href="page2.html">Go to page 2</a>  
-       | <a href="gifshowcase.html">GIF Showcase</a>
+    h1.title {
+      font-size: 2.5rem;
+      color: #f7e4d6;
+      margin-bottom: 20px;
+    }
+
+    #mainDiv {
+      font-size: 1rem;
+      max-width: 700px;
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      width: 300px;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #1d2d44;
+      background-color: #f7e4d6;
+      padding: 8px 16px;
+      border-radius: 6px;
+      margin-right: 10px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #e9d4c2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1 class="title">Horror Shop ~ Dracula's Manner</h1>
+
+  <div id="mainDiv">
+    A horror shop inspired by the classic Universal Studios monsters.
+  </div>
+
+  <img src="Image_3.png" alt="A horror shop inspired by the classic Universal monsters">
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="page1.html">Page 1</a>
+    <a href="page2.html">Page 2</a>
+    <a href="gifshowcase.html">GIF Showcase</a>
   </nav>
-    </body>
+
+</body>
 </html>
