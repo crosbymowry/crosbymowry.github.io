@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scene 2</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #d8f3ff 0%, #ffd6c0 100%);
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    #container {
+      width: 1600px;
+      min-height: 100vh;
+      margin: 0 auto;
+      position: relative;
+      padding-bottom: 150px;
+    }
+
+    .fade-img {
+      position: absolute;
+      width: 120px; /* Smaller image size */
+      height: auto;
+      opacity: var(--opacity, 0.8);
+      mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    }
+
+    .quote-mid-left {
+      position: absolute;
+      top: 38%;
+      left: 100px;
+      transform: rotate(-2deg);
+      font-size: 1.9rem;
+      font-style: italic;
+      color: #3d3d3d;
+      z-index: 100;
+      max-width: 30%;
+      line-height: 1.4;
+    }
+
+    .next-button {
+      display: block;
+      width: fit-content;
+      margin: 60px auto 40px auto;
+      padding: 12px 24px;
+      font-size: 1rem;
+      color: #111;
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-decoration: none;
+      z-index: 1000;
+      position: relative;
+      transition: all 0.3s ease;
+    }
+
+    .next-button:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+
+    <div class="quote-mid-left">
+      Lies the wake...
+    </div>
+
+    <img src="buildings/building_19.png" class="fade-img" style="top: 100px; left: 150px; --opacity: 0.7;">
+    <img src="buildings/building_14.png" class="fade-img" style="top: 200px; left: 450px; --opacity: 0.5;">
+    <img src="buildings/building_15.png" class="fade-img" style="top: 300px; left: 750px; --opacity: 0.6;">
+    <img src="buildings/building_9.png" class="fade-img" style="top: 500px; left: 200px; --opacity: 0.4;">
+    <img src="buildings/building_11.png" class="fade-img" style="top: 620px; left: 500px; --opacity: 0.65;">
+    <img src="buildings/building_28.png" class="fade-img" style="top: 150px; left: 1000px; --opacity: 0.5;">
+    <img src="buildings/building_34.png" class="fade-img" style="top: 380px; left: 950px; --opacity: 0.75;">
+    <img src="buildings/building_36.png" class="fade-img" style="top: 480px; left: 1150px; --opacity: 0.55;">
+    <img src="buildings/building_5.png" class="fade-img" style="top: 600px; left: 750px; --opacity: 0.6;">
+    <img src="buildings/building_3.png" class="fade-img" style="top: 700px; left: 400px; --opacity: 0.7;">
+    <img src="buildings/building_21.png" class="fade-img" style="top: 200px; left: 200px; --opacity: 0.4;">
+    <img src="buildings/building_20.png" class="fade-img" style="top: 620px; left: 950px; --opacity: 0.5;">
+
+  </div>
+
+  <a href="page3.html" class="next-button">Next ~</a>
+
+</body>
+</html>

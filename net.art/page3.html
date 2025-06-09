@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Scene 3</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at center, #d8f3ff 0%, #ffd6c0 100%);
+      font-family: 'Arial', sans-serif;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+
+    #container {
+      width: 1600px;
+      min-height: 100vh;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .fade-img {
+      position: absolute;
+      width: 120px;
+      height: auto;
+      opacity: var(--opacity, 0.8);
+      mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+      -webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+    }
+
+    .quote-fully-visible {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 2.4rem;
+      font-style: italic;
+      color: #111;
+      z-index: 1000;
+      pointer-events: none;
+      text-align: center;
+      width: 80%;
+      line-height: 1.4;
+    }
+
+    .home-button {
+      position: fixed;
+      bottom: 40px;
+      right: 60px;
+      padding: 12px 24px;
+      font-size: 1rem;
+      font-family: Arial, sans-serif;
+      color: #111;
+      background-color: rgba(255, 255, 255, 0.6);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      text-decoration: none;
+      z-index: 1001;
+      transition: all 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #fff;
+      color: #000;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <div id="container">
+
+    <div class="quote-fully-visible">
+      For the city never sleeps.
+    </div>
+
+    <img src="buildings/building_17.png" class="fade-img" style="top: 150px; left: 100px; --opacity: 0.6;">
+    <img src="buildings/building_33.png" class="fade-img" style="top: 250px; left: 400px; --opacity: 0.5;">
+    <img src="buildings/building_2.png" class="fade-img" style="top: 600px; left: 200px; --opacity: 0.7;">
+    <img src="buildings/building_7.png" class="fade-img" style="top: 100px; left: 900px; --opacity: 0.6;">
+    <img src="buildings/building_29.png" class="fade-img" style="top: 400px; left: 1000px; --opacity: 0.5;">
+    <img src="buildings/building_31.png" class="fade-img" style="top: 700px; left: 800px; --opacity: 0.4;">
+    <img src="buildings/building_32.png" class="fade-img" style="top: 550px; left: 600px; --opacity: 0.45;">
+    <img src="buildings/building_16.png" class="fade-img" style="top: 220px; left: 700px; --opacity: 0.5;">
+    <img src="buildings/building_24.png" class="fade-img" style="top: 300px; left: 300px; --opacity: 0.65;">
+    <img src="buildings/building_7.png" class="fade-img" style="top: 500px; left: 100px; --opacity: 0.6;">
+    <img src="buildings/building_18.png" class="fade-img" style="top: 650px; left: 500px; --opacity: 0.55;">
+    <img src="buildings/building_19.png" class="fade-img" style="top: 200px; left: 1150px; --opacity: 0.5;">
+
+  </div>
+
+  <a href="about.html" class="home-button">Back to Home Page</a>
+
+</body>
+</html>
