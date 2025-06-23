@@ -15,14 +15,24 @@
       font-family: Arial, sans-serif;
       overflow: hidden;
     }
+
     .comic-panel {
       width: min(90%, 600px);
       aspect-ratio: 4 / 3;
       border: 4px solid #a0c4ff;
-      background: #fff url("../images/placeholder.png") center/cover no-repeat;
+      background: #fff;
       box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     }
-    .home-btn, .continue-btn, .prev-btn {
+
+    .comic-panel img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .home-btn,
+    .continue-btn,
+    .prev-btn {
       position: fixed;
       padding: 12px 22px;
       border-radius: 10px;
@@ -32,23 +42,28 @@
       font-size: 1rem;
       transition: background 0.3s ease;
     }
+
     .home-btn {
       top: 30px;
       left: 30px;
     }
+
     .continue-btn {
       bottom: 30px;
       right: 30px;
     }
+
     .prev-btn {
       bottom: 70px;
       left: 30px;
     }
+
     .home-btn:hover,
     .continue-btn:hover,
     .prev-btn:hover {
       background: #ffdab9;
     }
+
     .page-number {
       position: fixed;
       bottom: 30px;
@@ -60,7 +75,10 @@
   </style>
 </head>
 <body>
-  <div class="comic-panel"></div>
+  <div class="comic-panel">
+    <img src="page3.png" alt="Comic Page 3">
+  </div>
+
   <a class="home-btn" href="../index.html">Home</a>
   <div class="page-number">Page 3</div>
   <a class="prev-btn" href="page2.html">&lsaquo; Previous</a>
