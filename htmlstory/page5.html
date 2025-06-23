@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Story – Page 5</title>
+  <link rel="stylesheet" href="../style.css">
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: radial-gradient(circle at center, transparent 55%, #a0c4ff 100%);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+    .comic-panel {
+      width: min(90%, 600px);
+      aspect-ratio: 4 / 3;
+      border: 4px solid #a0c4ff;
+      background: #fff url("../images/placeholder.png") center/cover no-repeat;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+    .home-btn, .continue-btn, .prev-btn {
+      position: fixed;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: #a0c4ff;
+      color: #333;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .home-btn {
+      top: 30px;
+      left: 30px;
+    }
+    .continue-btn {
+      bottom: 30px;
+      right: 30px;
+    }
+    .prev-btn {
+      bottom: 70px;
+      left: 30px;
+    }
+    .home-btn:hover,
+    .continue-btn:hover,
+    .prev-btn:hover {
+      background: #ffdab9;
+    }
+    .page-number {
+      position: fixed;
+      bottom: 30px;
+      left: 30px;
+      font-size: 0.9rem;
+      color: #333;
+      opacity: 0.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="comic-panel"></div>
+  <a class="home-btn" href="../index.html">Home</a>
+  <div class="page-number">Page 5</div>
+  <a class="prev-btn" href="page4.html">&lsaquo; Previous</a>
+  <a class="continue-btn" href="page6.html">Continue &rsaquo;</a>
+</body>
+</html>
