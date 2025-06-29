@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC p5.js Cityscape</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <style>
+    :root {
+      --peach: #ffd6c0;
+      --blue: #a0c4ff;
+      --text: #222;
+    }
+
+    body {
+      margin: 0;
+      padding: 60px 20px 100px;
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      min-height: 100vh;
+      background: radial-gradient(circle at center, var(--peach) 0%, var(--blue) 100%);
+      position: relative;
+    }
+
+    h1 {
+      font-size: 24px;
+      margin-bottom: 20px;
+      background: var(--blue);
+      color: #222;
+      padding: 10px 20px;
+      border-radius: 6px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    }
+
+    canvas {
+      border: 1px solid #aaa;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border-radius: 10px;
+      background-color: transparent;
+      margin-bottom: 30px;
+    }
+
+    .landscape-back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--blue);
+      color: #222;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      text-decoration: none;
+      padding: 12px 24px;
+      font-size: 14px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .landscape-back-button:hover {
+      background-color: #88b5f5;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>p5.js - NYC Cityscape</h1>
+  <script src="landscape.js"></script>
+<a class="landscape-back-button" href="../index.html">Back to Home</a>
+</body>
+</html>

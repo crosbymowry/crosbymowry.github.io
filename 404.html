@@ -2,46 +2,90 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>404 - Not Found</title>
+  <title>404 - Page Not Found</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
     body {
-      background: lightblue;
-      font-family: sans-serif;
-      text-align: center;
-      padding-top: 100px;
-    }
-
-    h1 {
-      font-size: 2em;
-      color: darkblue;
-    }
-
-    p {
-      font-size: 1em;
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: radial-gradient(circle at center, #a0c4ff, #ffdab9);
+      font-family: 'Inter', sans-serif;
+      position: relative;
+      overflow: hidden;
       color: #333;
     }
 
-    a {
-      display: inline-block;
-      margin-top: 20px;
-      padding: 10px 15px;
-      background-color: peachpuff;
-      color: black;
-      text-decoration: none;
-      border-radius: 4px;
+    .center-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
     }
 
-    a:hover {
-      background-color: orange;
+    .center-text h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .subtle-text {
+      font-size: 0.9rem;
+      opacity: 0.5;
+    }
+
+    .back-button {
+      margin-top: 1rem;
+      padding: 12px 24px;
+      background-color: #a0c4ff;
+      border: none;
+      border-radius: 10px;
+      color: #333;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+      text-decoration: none;
+      display: inline-block;
+    }
+
+    .back-button:hover {
+      background-color: #ffdab9;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+
+    .bg-404 {
+      position: absolute;
+      font-size: 5rem;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.05);
+      pointer-events: none;
+      z-index: 1;
+      animation: float404 10s infinite ease-in-out;
+    }
+
+    @keyframes float404 {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
     }
   </style>
 </head>
 <body>
 
-  <h1>404</h1>
-  <p>This page is probably still being designed.</p>
-  <p style="opacity: 0.6;">Try this page:</p>
-  <a href="index.html">Back to Home</a>
+<div class="center-text">
+  <h1>This page is probably still being designed.</h1>
+  <div class="subtle-text" style="margin-top: 1.5rem;">Try this page.</div>
+  <a href="index.html" class="back-button">Back to Home</a>
+</div>
+
+  <div class="bg-404" style="top: 10%; left: 15%;">404</div>
+  <div class="bg-404" style="top: 30%; left: 60%;">404</div>
+  <div class="bg-404" style="top: 50%; left: 30%;">404</div>
+  <div class="bg-404" style="top: 70%; left: 75%;">404</div>
+  <div class="bg-404" style="top: 85%; left: 10%;">404</div>
 
 </body>
 </html>
