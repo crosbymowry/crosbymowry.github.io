@@ -2,12 +2,91 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Responsive Image Gallery</title>
+  <title>The Blue Mood Image Gallery</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #a0c4ff, #ffdab9);
+      color: #333;
+      text-align: center;
+      min-height: 100vh;
+      padding: 50px;
+      box-sizing: border-box;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 15px;
+    }
+    p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 30px;
+    }
+    .gallery a {
+      flex: 0 0 calc(33.333% - 10px);
+      max-width: 100px;
+    }
+    .gallery a:nth-child(7) {
+      flex: 0 0 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    }
+    .home-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #88b5f5;
+      color: #222;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+    .home-button:hover {
+      background-color: #265dbe;
+    }
+    @media (max-width: 599px) {
+      .gallery a {
+        flex: 0 0 80%;
+        max-width: 150px;
+      }
+    }
+    @media (min-width: 600px) and (max-width: 1080px) {
+      .gallery a {
+        flex: 0 0 calc(50% - 10px);
+        max-width: 150px;
+      }
+    }
+  </style>
 </head>
 <body>
   <div class="container">
@@ -22,6 +101,7 @@
       <a href="images/grided-06.jpg" target="_blank"><img src="images/grided-06.jpg" alt="Image 6"></a>
       <a href="images/grided-07.jpg" target="_blank"><img src="images/grided-07.jpg" alt="Image 7"></a>
     </div>
+    <a class="home-button" href="../index.html">Back to Home</a>
   </div>
 </body>
 </html>
