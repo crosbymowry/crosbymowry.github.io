@@ -9,14 +9,10 @@
     body {
       background: radial-gradient(circle at center, #ffdab9, #a0c4ff);
       margin: 0;
-      padding: 0;
-      height: 100vh;
+      padding: 20px;
       font-family: 'Rubik', sans-serif;
       color: #333;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
     }
 
     h1 {
@@ -24,11 +20,29 @@
       margin: 20px 0 10px;
     }
 
-    p {
-      font-size: 1.2rem;
-      margin-bottom: 20px;
+    .gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+      margin: 30px 0;
+    }
+
+    .portrait {
+      max-width: 610px;
       text-align: center;
-      max-width: 600px;
+    }
+
+    .portrait h2 {
+      font-size: 1.8rem;
+      margin-bottom: 15px;
+      font-weight: 700;
+    }
+
+    .portrait p {
+      font-size: 1.1rem;
+      color: #555;
+      margin-top: 10px;
     }
 
     iframe {
@@ -37,7 +51,7 @@
       width: 610px;
       height: 410px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .home-button {
@@ -51,28 +65,40 @@
       border-radius: 5px;
       box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
       transition: background-color 0.3s ease;
+      margin-top: 30px;
     }
 
     .home-button:hover {
       background-color: #265dbe;
     }
+
+    @media (max-width: 1280px) {
+      .gallery {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
   </style>
 </head>
 <body>
-  <h1>Self Portrait</h1>
-  <p>Crosby Mowry</p>
+  <h1>Self Portraits</h1>
 
-  <iframe 
-    src="https://editor.p5js.org/crosbycroz/full/WOpRRdM14" 
-    title="Self Portrait Sketch by Crosby Mowry"
-    width="610" 
-    height="410">
-  </iframe>
+  <div class="gallery">
+    <div class="portrait">
+      <h2>Static Crosby</h2>
+      <iframe 
+        src="https://editor.p5js.org/crosbycroz/full/WOpRRdM14" 
+        title="Static Self Portrait"></iframe>
+    </div>
 
-  <p>
-    <a href="https://editor.p5js.org/crosbycroz/full/WOpRRdM14" target="_blank">
-    </a>
-  </p>
+    <div class="portrait">
+      <h2>Motion Crosby</h2>
+      <iframe 
+        src="https://editor.p5js.org/crosbycroz/full/l2DrSzDgX" 
+        title="Animated Self Portrait"></iframe>
+      <p>Click for blue pulse</p>
+    </div>
+  </div>
 
   <a class="home-button" href="../index.html">Back to Home</a>
 </body>
