@@ -1,0 +1,97 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Mock-Ups</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: radial-gradient(circle at center, #ffdab9, #a0c4ff);
+      margin: 0;
+      padding: 20px;
+      font-family: 'Rubik', sans-serif;
+      color: #333;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 1.2rem;
+      max-width: 800px;
+      margin: 0 auto 30px;
+      line-height: 1.6;
+    }
+
+    .wireframes {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .wireframe {
+      text-align: center;
+    }
+
+    .wireframe img {
+      max-width: 90%;
+      border: 3px solid #333;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      margin-bottom: 8px;
+    }
+
+    .wireframe-description {
+      font-size: 1rem;
+      color: #555;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .home-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 10px 20px;
+      background-color: #88b5f5;
+      color: #222;
+      text-decoration: none;
+      font-weight: 700;
+      font-family: 'Inter', sans-serif;
+      border-radius: 5px;
+      box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+      transition: background-color 0.3s ease;
+    }
+
+    .home-button:hover {
+      background-color: #265dbe;
+    }
+  </style>
+</head>
+<body>
+  <h1>Portfolio Mock-Ups</h1>
+  <p>By repeating the orange and blue aesthetic across each new page, I maintained a minimal layout with a clear 
+    hierarchy to guide the user experience.</p>
+
+  <div class="wireframes">
+    <div class="wireframe">
+      <img src="/sitemap/roughs/sitemap_1.png" alt="Index Wireframe">
+      <p class="wireframe-description">404 Page</p>
+    </div>
+    <div class="wireframe">
+      <img src="/sitemap/roughs/sitemap_2.png" alt="Projects Wireframe">
+      <p class="wireframe-description">About Page</p>
+    </div>
+    <div class="wireframe">
+      <img src="/sitemap/roughs/sitemap_3.png" alt="About Wireframe">
+      <p class="wireframe-description">Projects Page</p>
+    </div>
+  </div>
+
+  <a class="home-button" href="../index.html">Back to Home</a>
+</body>
+</html>
