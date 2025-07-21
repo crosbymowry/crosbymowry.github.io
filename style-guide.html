@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Style Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --peach: #ffd6c0;
+      --blue: #a0c4ff;
+      --text: #222;
+    }
+
+    body {
+      margin: 0;
+      padding: 60px 20px;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at center, var(--peach) 0%, var(--blue) 100%);
+      color: var(--text);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+
+    p {
+      max-width: 600px;
+      margin: 0 auto 30px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      margin-bottom: 20px;
+    }
+
+    .download-link {
+      display: inline-block;
+      background-color: var(--blue);
+      color: #222;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .download-link:hover {
+      background-color: #88b5f5;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+  <h1>Style Guide</h1>
+  <p>This style guide showcases the clean minimalistic layout 
+seen throughout my current website, while also showcasing the new 
+    mobile versions for phone compatability. In addition, I have added in the official swatches I have been utilizing for the color scheme.</p>
+  <a href="style-guide.pdf" class="download-link" download>Download Style Guide PDF</a>
+</body>
+</html>
