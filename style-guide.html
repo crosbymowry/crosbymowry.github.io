@@ -14,11 +14,13 @@
 
     body {
       margin: 0;
-      padding: 60px 20px;
+      padding: 60px 20px 100px; 
       font-family: 'Inter', sans-serif;
       background: radial-gradient(circle at center, var(--peach) 0%, var(--blue) 100%);
       color: var(--text);
       text-align: center;
+      position: relative;
+      min-height: 100vh;
     }
 
     h1 {
@@ -58,13 +60,36 @@
       background-color: #88b5f5;
       box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
     }
+
+    .back-button {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: var(--blue);
+      color: #222;
+      font-family: 'Inter', sans-serif;
+      font-weight: 600;
+      padding: 12px 24px;
+      border-radius: 6px;
+      text-decoration: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+      transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .back-button:hover {
+      background-color: #88b5f5;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+    }
   </style>
 </head>
 <body>
   <h1>Style Guide</h1>
   <p>This style guide showcases the clean minimalistic layout 
 seen throughout my current website, while also showcasing the new 
-    mobile versions for phone compatability. In addition, I have added in the official swatches I have been utilizing for the color scheme.</p>
+    mobile versions for phone compatibility. In addition, I have added in the official swatches I have been utilizing for the color scheme.</p>
   <a href="style-guide.pdf" class="download-link" download>Download Style Guide PDF</a>
+
+  <a href="index.html" class="back-button">Back to Home</a>
 </body>
 </html>
