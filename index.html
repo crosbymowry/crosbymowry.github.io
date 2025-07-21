@@ -24,16 +24,24 @@
       margin-bottom: 40px;
     }
 
+    nav {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 12px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
     nav a {
       text-decoration: none;
       color: #1d2d44;
       background-color: #f7e4d6;
       padding: 8px 16px;
       border-radius: 6px;
-      margin-right: 10px;
       font-weight: bold;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
       transition: background-color 0.3s ease;
+      text-align: center;
     }
 
     nav a:hover {
@@ -55,14 +63,14 @@
     <a href="page2.html">Page 2</a>
     <a href="page3.html">Page 3</a>
     <a href="404.html">404 Page</a>
-      <a href="net.art/about.html">Net Art</a>
+    <a href="net.art/about.html">Net Art</a>
     <a href="gifshowcase.html">GIF Showcase</a>
-      <a href="htmlstory/page1.html">HTML Story</a>
-      <a href="p5landscape/landscape.html">Landscape</a>
-      <a href="p5self-portrait/self-portrait.html">Self Portrait</a>
-      <a href="root-folder/responsive-gallery.html">RWD</a>
-      <a href="sitemap/wireframes.html">Portfolio Mock-Ups</a>
-      <a href="style-guide.html">Style Guide</a>
+    <a href="htmlstory/page1.html">HTML Story</a>
+    <a href="p5landscape/landscape.html">Landscape</a>
+    <a href="p5self-portrait/self-portrait.html">Self Portrait</a>
+    <a href="root-folder/responsive-gallery.html">RWD</a>
+    <a href="sitemap/wireframes.html">Portfolio Mock-Ups</a>
+    <a href="style-guide.html">Style Guide</a>
   </nav>
 
 </body>
