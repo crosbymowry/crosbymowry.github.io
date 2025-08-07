@@ -13,15 +13,17 @@
       font-family: 'Helvetica Neue', sans-serif;
       background: linear-gradient(to bottom, #f7cbbd, #a9c3e6);
       color: #1d2d44;
-      padding: 40px 60px; /* padding for both left and right sides */
+      padding: 40px 60px;
       min-height: 100vh;
       display: flex;
-      justify-content: center;
+      flex-direction: column;
+      justify-content: space-between;
     }
 
     .container {
       max-width: 1600px;
       width: 100%;
+      margin: 0 auto;
     }
 
     .image-header-group {
@@ -105,8 +107,8 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      height: 400px; /* match image height */
-      margin-right: 40px; /* bring buttons in from edge */
+      height: 400px;
+      margin-right: 40px;
     }
 
     .side-buttons a {
@@ -120,11 +122,30 @@
       text-decoration: none;
       text-align: center;
       transition: background-color 0.3s;
-      width: 220px; /* slightly smaller */
+      width: 220px;
     }
 
     .side-buttons a:hover {
       background-color: #c4c7da;
+    }
+
+    footer {
+      margin-top: 80px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #1d2d44;
+    }
+
+    footer a {
+      color: #1d2d44;
+      text-decoration: underline;
+    }
+
+    footer hr {
+      margin: 40px auto 20px auto;
+      border: none;
+      border-top: 1px solid #1d2d44;
+      width: 80%;
     }
 
     @media (max-width: 900px) {
@@ -213,6 +234,16 @@
       </div>
     </div>
   </div>
+
+  <footer>
+    <hr>
+    <p>© 2025 Crosby Mowry. Some rights reserved. <br>
+      This work is licensed under a 
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+        Creative Commons BY-NC-SA 4.0 License
+      </a>.
+    </p>
+  </footer>
 
 </body>
 </html>

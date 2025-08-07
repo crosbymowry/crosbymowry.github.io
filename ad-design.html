@@ -14,6 +14,9 @@
       background: linear-gradient(to bottom, #a9c3e6, #f7cbbd);
       color: #1d2d44;
       padding: 40px;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
 
     .back-button {
@@ -86,7 +89,7 @@
     }
 
     .image-wrapper:hover img {
-      transform: scale(1.05); /* Slightly reduced to prevent overflow issues */
+      transform: scale(1.05);
     }
 
     .project-title {
@@ -95,6 +98,24 @@
       color: #1d2d44;
       font-size: 1rem;
       display: block;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-top: 80px;
+    }
+
+    footer hr {
+      margin: 0 auto 20px auto;
+      border: none;
+      border-top: 1px solid #1d2d44;
+      width: 80%;
+    }
+
+    footer a {
+      color: #1d2d44;
+      text-decoration: underline;
     }
 
     @media (max-width: 900px) {
@@ -121,24 +142,36 @@
 </head>
 <body>
 
-  <a href="index.html" class="back-button">Back to Home</a>
+  <div style="flex: 1;">
+    <a href="index.html" class="back-button">Back to Home</a>
 
-  <h1>My Work</h1>
+    <h1>My Work</h1>
 
-  <div class="grid" id="projectGrid">
-    <div class="project"><a href="page1.html"><div class="image-wrapper"><img src="project_thumbnails/space_image.png" alt="Page 1"></div></a><span class="project-title">NASA Posters</span></div>
-    <div class="project"><a href="page2.html"><div class="image-wrapper"><img src="project_thumbnails/phone_ad.png" alt="Page 2"></div></a><span class="project-title">Instagram Story</span></div>
-    <div class="project"><a href="page3.html"><div class="image-wrapper"><img src="project_thumbnails/dracula_signage.png" alt="Page 3"></div></a><span class="project-title">Signage Display</span></div>
-    <div class="project"><a href="404.html"><div class="image-wrapper"><img src="project_thumbnails/404_page.png" alt="404 Page"></div></a><span class="project-title">404 Page</span></div>
-    <div class="project"><a href="net.art/about.html"><div class="image-wrapper"><img src="project_thumbnails/net_art.png" alt="Net Art"></div></a><span class="project-title">Net Art</span></div>
-    <div class="project"><a href="gifshowcase.html"><div class="image-wrapper"><img src="project_thumbnails/gif_woman" alt="GIF Showcase"></div></a><span class="project-title">GIF Showcase</span></div>
-    <div class="project"><a href="htmlstory/page1.html"><div class="image-wrapper"><img src="project_thumbnails/html_story.png" alt="HTML Story"></div></a><span class="project-title">HTML Story</span></div>
-    <div class="project"><a href="p5landscape/landscape.html"><div class="image-wrapper"><img src="project_thumbnails/landscape.png" alt="Landscape"></div></a><span class="project-title">Landscape</span></div>
-    <div class="project"><a href="p5self-portrait/self-portrait.html"><div class="image-wrapper"><img src="project_thumbnails/self_portrait.png" alt="Self Portrait"></div></a><span class="project-title">Self Portrait</span></div>
-    <div class="project"><a href="root-folder/responsive-gallery.html"><div class="image-wrapper"><img src="project_thumbnails/blue_vibe.png" alt="RWD"></div></a><span class="project-title">RWD</span></div>
-    <div class="project"><a href="sitemap/wireframes.html"><div class="image-wrapper"><img src="project_thumbnails/mock_up_portfolio.png" alt="Portfolio Mock-Ups"></div></a><span class="project-title">Portfolio Mock-Ups</span></div>
-    <div class="project"><a href="style-guide.html"><div class="image-wrapper"><img src="project_thumbnails/style_guide_thumbnail.png" alt="Style Guide"></div></a><span class="project-title">Style Guide</span></div>
+    <div class="grid" id="projectGrid">
+      <div class="project"><a href="page1.html"><div class="image-wrapper"><img src="project_thumbnails/space_image.png" alt="Page 1"></div></a><span class="project-title">NASA Posters</span></div>
+      <div class="project"><a href="page2.html"><div class="image-wrapper"><img src="project_thumbnails/phone_ad.png" alt="Page 2"></div></a><span class="project-title">Instagram Story</span></div>
+      <div class="project"><a href="page3.html"><div class="image-wrapper"><img src="project_thumbnails/dracula_signage.png" alt="Page 3"></div></a><span class="project-title">Signage Display</span></div>
+      <div class="project"><a href="404.html"><div class="image-wrapper"><img src="project_thumbnails/404_page.png" alt="404 Page"></div></a><span class="project-title">404 Page</span></div>
+      <div class="project"><a href="net.art/about.html"><div class="image-wrapper"><img src="project_thumbnails/net_art.png" alt="Net Art"></div></a><span class="project-title">Net Art</span></div>
+      <div class="project"><a href="gifshowcase.html"><div class="image-wrapper"><img src="project_thumbnails/gif_woman" alt="GIF Showcase"></div></a><span class="project-title">GIF Showcase</span></div>
+      <div class="project"><a href="htmlstory/page1.html"><div class="image-wrapper"><img src="project_thumbnails/html_story.png" alt="HTML Story"></div></a><span class="project-title">HTML Story</span></div>
+      <div class="project"><a href="p5landscape/landscape.html"><div class="image-wrapper"><img src="project_thumbnails/landscape.png" alt="Landscape"></div></a><span class="project-title">Landscape</span></div>
+      <div class="project"><a href="p5self-portrait/self-portrait.html"><div class="image-wrapper"><img src="project_thumbnails/self_portrait.png" alt="Self Portrait"></div></a><span class="project-title">Self Portrait</span></div>
+      <div class="project"><a href="root-folder/responsive-gallery.html"><div class="image-wrapper"><img src="project_thumbnails/blue_vibe.png" alt="RWD"></div></a><span class="project-title">RWD</span></div>
+      <div class="project"><a href="sitemap/wireframes.html"><div class="image-wrapper"><img src="project_thumbnails/mock_up_portfolio.png" alt="Portfolio Mock-Ups"></div></a><span class="project-title">Portfolio Mock-Ups</span></div>
+      <div class="project"><a href="style-guide.html"><div class="image-wrapper"><img src="project_thumbnails/style_guide_thumbnail.png" alt="Style Guide"></div></a><span class="project-title">Style Guide</span></div>
+    </div>
   </div>
+
+  <footer>
+    <hr>
+    <p>© 2025 Crosby Mowry. Some rights reserved. <br>
+      This work is licensed under a 
+      <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+        Creative Commons BY-NC-SA 4.0 License
+      </a>.
+    </p>
+  </footer>
 
   <script>
     window.addEventListener('load', () => {
