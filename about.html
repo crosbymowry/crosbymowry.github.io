@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About - Crosby Mowry</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to right, #f7cbbd, #a9c3e6);
+      color: #1d2d44;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 8rem;
+      margin-bottom: 50px;
+      font-weight: bold;
+    }
+
+    .content-row {
+      display: flex;
+      gap: 60px;
+      max-width: 1800px;
+      margin: 0 auto;
+      align-items: flex-start;
+      flex-wrap: nowrap;
+    }
+
+    .photo-wrapper {
+      border-radius: 30px;
+      background-color: #8cb8e6;
+      padding: 10px;
+      width: 400px;
+      flex-shrink: 0;
+    }
+
+    .photo-wrapper img {
+      border-radius: 25px;
+      width: 100%;
+      height: 500px;
+      object-fit: cover;
+      object-position: top;
+    }
+
+    .name-block {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      gap: 20px;
+      flex-shrink: 0;
+    }
+
+    .name-block .name {
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    .name-block .title {
+      font-size: 1.3rem;
+      line-height: 1.4;
+    }
+
+    .button {
+      background-color: #d8e0f1;
+      border: 2px solid #1d2d44;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-weight: bold;
+      color: #1d2d44;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      width: fit-content;
+    }
+
+    .button:hover {
+      background-color: #c4cde3;
+    }
+
+    .bio-block {
+      flex: 1;
+      max-width: 700px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .icon-row {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .icon-row img {
+      width: 90px;
+      height: 90px;
+      border-radius: 20px;
+      object-fit: cover;
+      object-position: center top;
+    }
+
+    .plus-sign {
+      font-size: 3rem;
+      font-weight: bold;
+    }
+
+    .bio-text {
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: left;
+    }
+
+    @media (max-width: 1200px) {
+      .content-row {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      h1 {
+        font-size: 5rem;
+        text-align: center;
+      }
+
+      .bio-text, .name-block {
+        text-align: center;
+        align-items: center;
+      }
+
+      .icon-row {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      .plus-sign {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>About</h1>
+
+  <div class="content-row">
+    <div class="photo-wrapper">
+      <img src="about_page/crosby_photo_chair.jpeg" alt="Crosby Mowry" />
+    </div>
+
+    <div class="name-block">
+      <div class="name">Crosby Mowry</div>
+      <div class="title">Voice Actor – Music Producer<br>& Graphic Designer</div>
+      <a href="index.html" class="button">Back to Home</a>
+    </div>
+
+    <div class="bio-block">
+      <div class="icon-row">
+        <img src="about_page/headshot.jpg" alt="Headshot" />
+        <div class="plus-sign">+</div>
+        <img src="about_page/mic.jpg" alt="Mic Icon" />
+      </div>
+      <div class="bio-text">
+        I’m a voice actor and music producer with a BFA in Graphic Design from the University of West Florida. Whether it’s behind the mic or behind the screen, I’m passionate about storytelling through sound and visuals.
+        <br><br>
+        As a voice actor, I bring characters to life through expressive, engaging performances ranging from grounded and conversational to bold and stylized. My background in design and experience with Tag Team projects have sharpened my ability to think creatively and communicate clearly, both on a team or with a client.
+        <br><br>
+        In the music world, I run a YouTube channel called <strong>WhenLifeGivesYouCrosby</strong> (or <strong>WLGYCrosby</strong> for short), where I produce original music inspired by games and animated series. It’s a space where I blend fandom with production, creating energetic tracks that connect with niche communities in fun and unexpected ways.
+      </div>
+      <a href="contact.html" class="button">Contact</a>
+    </div>
+  </div>
+
+</body>
+</html>

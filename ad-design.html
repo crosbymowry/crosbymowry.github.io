@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Crosby Mowry</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #a9c3e6, #f7cbbd);
+      color: #1d2d44;
+      padding: 40px;
+    }
+
+    .back-button {
+      background-color: #d8e0f1;
+      border: 2px solid #1d2d44;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-weight: bold;
+      color: #1d2d44;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      display: inline-block;
+      margin-bottom: 30px;
+    }
+
+    .back-button:hover {
+      background-color: #c4cde3;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    .project {
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .image-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      overflow: hidden;
+      border-radius: 25px;
+    }
+
+    .project img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.4s ease;
+      display: block;
+      border-radius: 25px;
+      z-index: 1;
+      position: relative;
+    }
+
+    .image-wrapper::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 25px;
+      pointer-events: none;
+      z-index: 2;
+      background: radial-gradient(circle, rgba(173, 200, 245, 0.4) 30%, rgba(173, 200, 245, 0.2) 80%, transparent 100%);
+      mix-blend-mode: screen;
+    }
+
+    .image-wrapper:hover img {
+      transform: scale(1.05); /* Slightly reduced to prevent overflow issues */
+    }
+
+    .project-title {
+      margin-top: 12px;
+      font-weight: bold;
+      color: #1d2d44;
+      font-size: 1rem;
+      display: block;
+    }
+
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      h1 {
+        font-size: 1.8rem;
+      }
+
+      .back-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <a href="index.html" class="back-button">Back to Home</a>
+
+  <h1>My Work</h1>
+
+  <div class="grid" id="projectGrid">
+    <div class="project"><a href="page1.html"><div class="image-wrapper"><img src="project_thumbnails/space_image.png" alt="Page 1"></div></a><span class="project-title">NASA Posters</span></div>
+    <div class="project"><a href="page2.html"><div class="image-wrapper"><img src="project_thumbnails/phone_ad.png" alt="Page 2"></div></a><span class="project-title">Instagram Story</span></div>
+    <div class="project"><a href="page3.html"><div class="image-wrapper"><img src="project_thumbnails/dracula_signage.png" alt="Page 3"></div></a><span class="project-title">Signage Display</span></div>
+    <div class="project"><a href="404.html"><div class="image-wrapper"><img src="project_thumbnails/404_page.png" alt="404 Page"></div></a><span class="project-title">404 Page</span></div>
+    <div class="project"><a href="net.art/about.html"><div class="image-wrapper"><img src="project_thumbnails/net_art.png" alt="Net Art"></div></a><span class="project-title">Net Art</span></div>
+    <div class="project"><a href="gifshowcase.html"><div class="image-wrapper"><img src="project_thumbnails/gif_woman" alt="GIF Showcase"></div></a><span class="project-title">GIF Showcase</span></div>
+    <div class="project"><a href="htmlstory/page1.html"><div class="image-wrapper"><img src="project_thumbnails/html_story.png" alt="HTML Story"></div></a><span class="project-title">HTML Story</span></div>
+    <div class="project"><a href="p5landscape/landscape.html"><div class="image-wrapper"><img src="project_thumbnails/landscape.png" alt="Landscape"></div></a><span class="project-title">Landscape</span></div>
+    <div class="project"><a href="p5self-portrait/self-portrait.html"><div class="image-wrapper"><img src="project_thumbnails/self_portrait.png" alt="Self Portrait"></div></a><span class="project-title">Self Portrait</span></div>
+    <div class="project"><a href="root-folder/responsive-gallery.html"><div class="image-wrapper"><img src="project_thumbnails/blue_vibe.png" alt="RWD"></div></a><span class="project-title">RWD</span></div>
+    <div class="project"><a href="sitemap/wireframes.html"><div class="image-wrapper"><img src="project_thumbnails/mock_up_portfolio.png" alt="Portfolio Mock-Ups"></div></a><span class="project-title">Portfolio Mock-Ups</span></div>
+    <div class="project"><a href="style-guide.html"><div class="image-wrapper"><img src="project_thumbnails/style_guide_thumbnail.png" alt="Style Guide"></div></a><span class="project-title">Style Guide</span></div>
+  </div>
+
+  <script>
+    window.addEventListener('load', () => {
+      const projects = document.querySelectorAll('.project');
+      projects.forEach((project, index) => {
+        const row = Math.floor(index / 3);
+        const isSmallRow = row % 2 === 1;
+        project.style.transform = isSmallRow ? 'scale(0.85)' : 'scale(1)';
+      });
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Music Production</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #f7cbbd, #a9c3e6);
+      color: #1d2d44;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 60px 20px;
+      min-height: 100vh;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .video-section {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      gap: 60px;
+      flex-wrap: wrap;
+      max-width: 1400px;
+      width: 100%;
+    }
+
+    .video-container {
+      flex: 1 1 600px;
+      max-width: 600px;
+      background-color: #f5f5f5;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .video-container iframe {
+      width: 100%;
+      height: 340px;
+      border: none;
+      border-radius: 10px;
+    }
+
+    .video-caption {
+      margin-top: 10px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .home-button {
+      margin-top: 80px;
+      background-color: #a9c3e6;
+      color: #1d2d44;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      border: 2px solid #1d2d44;
+      transition: background-color 0.3s;
+    }
+
+    .home-button:hover {
+      background-color: #8aaed4;
+    }
+
+    @media (max-width: 768px) {
+      .video-section {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .video-container {
+        width: 100%;
+        max-width: 90%;
+      }
+
+      .video-container iframe {
+        height: 220px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Music Production</h1>
+
+  <div class="video-section">
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/9OapmahZtMs?si=6qjadeQhIt_6WUqx" 
+        title="Look at You - Music Video by Crosby" 
+        allowfullscreen>
+      </iframe>
+      <div class="video-caption">Look at You</div>
+    </div>
+
+    <div class="video-container">
+      <iframe 
+        src="https://www.youtube.com/embed/YKB90jyP9Ag?si=tSS4lL_t-v2Ad5uJ" 
+        title="Main Guy AI - Music Video by Crosby" 
+        allowfullscreen>
+      </iframe>
+      <div class="video-caption">Main Guy AI</div>
+    </div>
+  </div>
+
+  <a href="index.html" class="home-button">Back to Home</a>
+
+</body>
+</html>
